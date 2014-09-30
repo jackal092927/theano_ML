@@ -157,9 +157,9 @@ def load_data(dataset):
 
     # Download the MNIST dataset if it is not present
     #dataset = './data/mnist.pkl.gz'
-    dataset = './data/mnist_less.pkl'
+    #dataset = './data/mnist_less.pkl'
     #dataset = './data/mydata_small.pkl'
-    #dataset = './data/feature.pkl'
+    dataset = './data/feature.pkl'
     #dataset = './data/feature2.pkl'
     # #data_dir, data_file = os.path.split(dataset)
     # data_dir, data_file = data_path.split(dataset)
@@ -227,7 +227,7 @@ def load_data(dataset):
 
 def sgd_optimization_mnist(
         #learning_rate=0.13,
-        learning_rate=0.03,
+        learning_rate=0.13,
         n_epochs=1000,
         dataset='mnist.pkl.',
         #batch_size=600):
@@ -251,10 +251,10 @@ def sgd_optimization_mnist(
 
     """
     datasets = load_data(dataset)
-    #n_in = 1858
-    #n_out = 5
-    n_in = 784
-    n_out = 10
+    n_in = 1858
+    n_out = 5
+    #n_in = 784
+    #n_out = 10
 
     train_set_x, train_set_y = datasets[0]
     valid_set_x, valid_set_y = datasets[1]
@@ -359,8 +359,8 @@ def sgd_optimization_mnist(
                 # compute zero-one loss on validation set
                 validation_losses = [validate_model(i)
                                      for i in xrange(n_valid_batches)]
-                train_losses = [mytrain_model(i) for i in xrange(n_train_batches)]
                 this_validation_loss = numpy.mean(validation_losses)
+                train_losses = [mytrain_model(i) for i in xrange(n_train_batches)]
                 this_train_loss = numpy.mean(train_losses)
                 print('epoch %i, minibatch %i/%i, validation error %f %%, train error %f %%' % \
                     (epoch, minibatch_index + 1, n_train_batches,
