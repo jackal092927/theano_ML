@@ -1,0 +1,590 @@
+file = "./data/feature.pkl"
+input = 1858dim features
+output = 5 classes
+supre-params:
+learning_rate = 0.33(lower may be better...)
+
+
+
+... loading data
+... building the model
+... getting the pretraining functions
+... pre-training the model
+Pre-training layer 0, epoch 0, cost  60.8179007697
+Pre-training layer 0, epoch 1, cost  23.4815861917
+Pre-training layer 0, epoch 2, cost  22.0898687241
+Pre-training layer 0, epoch 3, cost  21.5786947423
+Pre-training layer 0, epoch 4, cost  21.3163828077
+Pre-training layer 0, epoch 5, cost  21.1622402627
+Pre-training layer 0, epoch 6, cost  21.0603289345
+Pre-training layer 0, epoch 7, cost  20.9903696401
+Pre-training layer 0, epoch 8, cost  20.9401506791
+Pre-training layer 0, epoch 9, cost  20.9008784606
+Pre-training layer 0, epoch 10, cost  20.8695056678
+Pre-training layer 0, epoch 11, cost  20.8441561766
+Pre-training layer 0, epoch 12, cost  20.823667812
+Pre-training layer 0, epoch 13, cost  20.8072725012
+Pre-training layer 0, epoch 14, cost  20.7943931956
+Pre-training layer 1, epoch 0, cost  724.011859419
+Pre-training layer 1, epoch 1, cost  702.956894221
+Pre-training layer 1, epoch 2, cost  700.645730935
+Pre-training layer 1, epoch 3, cost  699.487727334
+Pre-training layer 1, epoch 4, cost  698.808273573
+Pre-training layer 1, epoch 5, cost  698.160809262
+Pre-training layer 1, epoch 6, cost  697.623800863
+Pre-training layer 1, epoch 7, cost  697.179039204
+Pre-training layer 1, epoch 8, cost  696.758862402
+Pre-training layer 1, epoch 9, cost  696.42605213
+Pre-training layer 1, epoch 10, cost  696.179278957
+Pre-training layer 1, epoch 11, cost  695.924627507
+Pre-training layer 1, epoch 12, cost  695.674755586
+Pre-training layer 1, epoch 13, cost  695.459421392
+Pre-training layer 1, epoch 14, cost  695.298769111
+Pre-training layer 2, epoch 0, cost  87.7697382865
+Pre-training layer 2, epoch 1, cost  70.701617314
+Pre-training layer 2, epoch 2, cost  68.8980391523
+Pre-training layer 2, epoch 3, cost  67.5071309754
+Pre-training layer 2, epoch 4, cost  66.4962788573
+Pre-training layer 2, epoch 5, cost  65.6581837366
+Pre-training layer 2, epoch 6, cost  65.0130519004
+Pre-training layer 2, epoch 7, cost  64.4816492284
+Pre-training layer 2, epoch 8, cost  64.0926261093
+Pre-training layer 2, epoch 9, cost  63.7308164115
+Pre-training layer 2, epoch 10, cost  63.4342898824
+Pre-training layer 2, epoch 11, cost  63.1666420953
+Pre-training layer 2, epoch 12, cost  62.970530512
+Pre-training layer 2, epoch 13, cost  62.7610381598
+Pre-training layer 2, epoch 14, cost  62.6245051029
+The pretraining code for file SdA.py ran for 21.88m
+... getting the finetuning functions
+... finetunning the model
+epoch 1, minibatch 1101/1101, validation error 96.350365 %
+     epoch 1, minibatch 1101/1101, test error of best model 96.350365 %
+epoch 2, minibatch 1101/1101, validation error 96.350365 %
+epoch 3, minibatch 1101/1101, validation error 96.350365 %
+epoch 4, minibatch 1101/1101, validation error 96.350365 %
+epoch 5, minibatch 1101/1101, validation error 96.350365 %
+epoch 6, minibatch 1101/1101, validation error 96.350365 %
+epoch 7, minibatch 1101/1101, validation error 96.350365 %
+epoch 8, minibatch 1101/1101, validation error 96.350365 %
+epoch 9, minibatch 1101/1101, validation error 96.350365 %
+epoch 10, minibatch 1101/1101, validation error 96.350365 %
+Optimization complete with best validation score of 96.350365 %,with test performance 96.350365 %
+The training code for file SdA.py ran for 6.42m
+
+
+
+
+
+file = "./data/feature.pkl"
+input = 1858dim features
+output = 2 classes
+supre-params:
+learning_rate = 0.03
+
+... loading data
+... building the model
+... training the model
+epoch 1, minibatch 36/36, validation error 33.333333 %
+     epoch 1, minibatch 36/36, test error of best model 40.000000 %
+epoch 2, minibatch 36/36, validation error 35.000000 %
+epoch 3, minibatch 36/36, validation error 33.333333 %
+epoch 4, minibatch 36/36, validation error 36.666667 %
+epoch 5, minibatch 36/36, validation error 36.666667 %
+epoch 6, minibatch 36/36, validation error 37.500000 %
+epoch 7, minibatch 36/36, validation error 36.666667 %
+epoch 8, minibatch 36/36, validation error 36.666667 %
+epoch 9, minibatch 36/36, validation error 36.666667 %
+epoch 10, minibatch 36/36, validation error 36.666667 %
+epoch 11, minibatch 36/36, validation error 37.500000 %
+epoch 12, minibatch 36/36, validation error 36.666667 %
+epoch 13, minibatch 36/36, validation error 36.666667 %
+epoch 14, minibatch 36/36, validation error 37.500000 %
+epoch 15, minibatch 36/36, validation error 36.666667 %
+epoch 16, minibatch 36/36, validation error 36.666667 %
+epoch 17, minibatch 36/36, validation error 36.666667 %
+epoch 18, minibatch 36/36, validation error 36.666667 %
+epoch 19, minibatch 36/36, validation error 36.666667 %
+epoch 20, minibatch 36/36, validation error 36.666667 %
+epoch 21, minibatch 36/36, validation error 36.666667 %
+epoch 22, minibatch 36/36, validation error 37.500000 %
+epoch 23, minibatch 36/36, validation error 37.500000 %
+epoch 24, minibatch 36/36, validation error 37.500000 %
+epoch 25, minibatch 36/36, validation error 36.666667 %
+epoch 26, minibatch 36/36, validation error 35.833333 %
+epoch 27, minibatch 36/36, validation error 35.833333 %
+epoch 28, minibatch 36/36, validation error 36.666667 %
+epoch 29, minibatch 36/36, validation error 36.666667 %
+epoch 30, minibatch 36/36, validation error 37.500000 %
+epoch 31, minibatch 36/36, validation error 37.500000 %
+epoch 32, minibatch 36/36, validation error 37.500000 %
+epoch 33, minibatch 36/36, validation error 36.666667 %
+epoch 34, minibatch 36/36, validation error 36.666667 %
+epoch 35, minibatch 36/36, validation error 36.666667 %
+epoch 36, minibatch 36/36, validation error 36.666667 %
+epoch 37, minibatch 36/36, validation error 36.666667 %
+epoch 38, minibatch 36/36, validation error 36.666667 %
+epoch 39, minibatch 36/36, validation error 36.666667 %
+epoch 40, minibatch 36/36, validation error 36.666667 %
+epoch 41, minibatch 36/36, validation error 36.666667 %
+epoch 42, minibatch 36/36, validation error 35.833333 %
+epoch 43, minibatch 36/36, validation error 35.000000 %
+epoch 44, minibatch 36/36, validation error 35.000000 %
+epoch 45, minibatch 36/36, validation error 34.166667 %
+epoch 46, minibatch 36/36, validation error 34.166667 %
+epoch 47, minibatch 36/36, validation error 33.333333 %
+epoch 48, minibatch 36/36, validation error 33.333333 %
+epoch 49, minibatch 36/36, validation error 33.333333 %
+epoch 50, minibatch 36/36, validation error 33.333333 %
+epoch 51, minibatch 36/36, validation error 33.333333 %
+epoch 52, minibatch 36/36, validation error 32.500000 %
+     epoch 52, minibatch 36/36, test error of best model 38.333333 %
+epoch 53, minibatch 36/36, validation error 32.500000 %
+epoch 54, minibatch 36/36, validation error 32.500000 %
+epoch 55, minibatch 36/36, validation error 32.500000 %
+epoch 56, minibatch 36/36, validation error 32.500000 %
+epoch 57, minibatch 36/36, validation error 33.333333 %
+epoch 58, minibatch 36/36, validation error 33.333333 %
+epoch 59, minibatch 36/36, validation error 33.333333 %
+epoch 60, minibatch 36/36, validation error 34.166667 %
+epoch 61, minibatch 36/36, validation error 34.166667 %
+epoch 62, minibatch 36/36, validation error 34.166667 %
+epoch 63, minibatch 36/36, validation error 34.166667 %
+epoch 64, minibatch 36/36, validation error 34.166667 %
+epoch 65, minibatch 36/36, validation error 34.166667 %
+epoch 66, minibatch 36/36, validation error 34.166667 %
+epoch 67, minibatch 36/36, validation error 34.166667 %
+epoch 68, minibatch 36/36, validation error 34.166667 %
+epoch 69, minibatch 36/36, validation error 34.166667 %
+epoch 70, minibatch 36/36, validation error 35.000000 %
+epoch 71, minibatch 36/36, validation error 35.000000 %
+epoch 72, minibatch 36/36, validation error 35.000000 %
+epoch 73, minibatch 36/36, validation error 35.000000 %
+epoch 74, minibatch 36/36, validation error 35.000000 %
+epoch 75, minibatch 36/36, validation error 35.000000 %
+epoch 76, minibatch 36/36, validation error 35.000000 %
+epoch 77, minibatch 36/36, validation error 35.833333 %
+epoch 78, minibatch 36/36, validation error 35.833333 %
+epoch 79, minibatch 36/36, validation error 35.833333 %
+epoch 80, minibatch 36/36, validation error 35.833333 %
+epoch 81, minibatch 36/36, validation error 35.833333 %
+epoch 82, minibatch 36/36, validation error 35.833333 %
+epoch 83, minibatch 36/36, validation error 35.833333 %
+epoch 84, minibatch 36/36, validation error 35.833333 %
+epoch 85, minibatch 36/36, validation error 35.833333 %
+epoch 86, minibatch 36/36, validation error 35.833333 %
+epoch 87, minibatch 36/36, validation error 35.833333 %
+epoch 88, minibatch 36/36, validation error 35.833333 %
+epoch 89, minibatch 36/36, validation error 35.833333 %
+epoch 90, minibatch 36/36, validation error 35.833333 %
+epoch 91, minibatch 36/36, validation error 35.833333 %
+epoch 92, minibatch 36/36, validation error 35.833333 %
+epoch 93, minibatch 36/36, validation error 36.666667 %
+epoch 94, minibatch 36/36, validation error 35.833333 %
+epoch 95, minibatch 36/36, validation error 35.833333 %
+epoch 96, minibatch 36/36, validation error 35.833333 %
+epoch 97, minibatch 36/36, validation error 35.833333 %
+epoch 98, minibatch 36/36, validation error 35.833333 %
+epoch 99, minibatch 36/36, validation error 35.833333 %
+epoch 100, minibatch 36/36, validation error 35.833333 %
+epoch 101, minibatch 36/36, validation error 35.833333 %
+epoch 102, minibatch 36/36, validation error 35.833333 %
+epoch 103, minibatch 36/36, validation error 35.833333 %
+epoch 104, minibatch 36/36, validation error 35.833333 %
+epoch 105, minibatch 36/36, validation error 35.833333 %
+epoch 106, minibatch 36/36, validation error 35.833333 %
+epoch 107, minibatch 36/36, validation error 35.833333 %
+epoch 108, minibatch 36/36, validation error 35.833333 %
+epoch 109, minibatch 36/36, validation error 35.833333 %
+epoch 110, minibatch 36/36, validation error 35.833333 %
+epoch 111, minibatch 36/36, validation error 35.833333 %
+epoch 112, minibatch 36/36, validation error 35.833333 %
+epoch 113, minibatch 36/36, validation error 35.833333 %
+epoch 114, minibatch 36/36, validation error 35.833333 %
+epoch 115, minibatch 36/36, validation error 35.833333 %
+epoch 116, minibatch 36/36, validation error 35.833333 %
+epoch 117, minibatch 36/36, validation error 35.000000 %
+epoch 118, minibatch 36/36, validation error 35.000000 %
+epoch 119, minibatch 36/36, validation error 35.000000 %
+epoch 120, minibatch 36/36, validation error 35.000000 %
+epoch 121, minibatch 36/36, validation error 35.000000 %
+epoch 122, minibatch 36/36, validation error 35.000000 %
+epoch 123, minibatch 36/36, validation error 35.000000 %
+epoch 124, minibatch 36/36, validation error 35.000000 %
+epoch 125, minibatch 36/36, validation error 35.000000 %
+epoch 126, minibatch 36/36, validation error 35.000000 %
+epoch 127, minibatch 36/36, validation error 35.000000 %
+epoch 128, minibatch 36/36, validation error 35.000000 %
+epoch 129, minibatch 36/36, validation error 35.000000 %
+epoch 130, minibatch 36/36, validation error 35.000000 %
+epoch 131, minibatch 36/36, validation error 35.000000 %
+epoch 132, minibatch 36/36, validation error 35.000000 %
+epoch 133, minibatch 36/36, validation error 35.000000 %
+epoch 134, minibatch 36/36, validation error 35.000000 %
+epoch 135, minibatch 36/36, validation error 35.000000 %
+epoch 136, minibatch 36/36, validation error 34.166667 %
+epoch 137, minibatch 36/36, validation error 34.166667 %
+epoch 138, minibatch 36/36, validation error 34.166667 %
+5000 5000
+Optimization complete with best validation score of 32.500000 %,with test performance 38.333333 %
+The code run for 139 epochs, with 54.924126 epochs/sec
+The code for file logistic_sgd.py ran for 2.5s
+
+
+
+/System/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7 /Users/Jackal/Work/theano/logistic_sgd.py
+... loading data
+... building the model
+... training the model
+epoch 1, minibatch 36/36, validation error 57.500000 %, train error 51.111111 %
+     epoch 1, minibatch 36/36, test error of best model 57.500000 %
+epoch 2, minibatch 36/36, validation error 57.500000 %, train error 51.111111 %
+epoch 3, minibatch 36/36, validation error 57.500000 %, train error 51.111111 %
+epoch 4, minibatch 36/36, validation error 57.500000 %, train error 51.111111 %
+epoch 5, minibatch 36/36, validation error 57.500000 %, train error 51.111111 %
+epoch 6, minibatch 36/36, validation error 57.500000 %, train error 51.111111 %
+epoch 7, minibatch 36/36, validation error 57.500000 %, train error 51.111111 %
+epoch 8, minibatch 36/36, validation error 57.500000 %, train error 51.111111 %
+epoch 9, minibatch 36/36, validation error 57.500000 %, train error 51.111111 %
+epoch 10, minibatch 36/36, validation error 57.500000 %, train error 51.111111 %
+epoch 11, minibatch 36/36, validation error 57.500000 %, train error 51.111111 %
+epoch 12, minibatch 36/36, validation error 57.500000 %, train error 51.111111 %
+epoch 13, minibatch 36/36, validation error 57.500000 %, train error 50.925926 %
+epoch 14, minibatch 36/36, validation error 57.500000 %, train error 49.629630 %
+epoch 15, minibatch 36/36, validation error 54.166667 %, train error 47.777778 %
+     epoch 15, minibatch 36/36, test error of best model 50.833333 %
+epoch 16, minibatch 36/36, validation error 52.500000 %, train error 45.462963 %
+     epoch 16, minibatch 36/36, test error of best model 44.166667 %
+epoch 17, minibatch 36/36, validation error 50.000000 %, train error 44.351852 %
+     epoch 17, minibatch 36/36, test error of best model 42.500000 %
+epoch 18, minibatch 36/36, validation error 47.500000 %, train error 43.240741 %
+     epoch 18, minibatch 36/36, test error of best model 41.666667 %
+epoch 19, minibatch 36/36, validation error 44.166667 %, train error 42.777778 %
+     epoch 19, minibatch 36/36, test error of best model 40.833333 %
+epoch 20, minibatch 36/36, validation error 43.333333 %, train error 41.481481 %
+     epoch 20, minibatch 36/36, test error of best model 42.500000 %
+epoch 21, minibatch 36/36, validation error 41.666667 %, train error 40.648148 %
+     epoch 21, minibatch 36/36, test error of best model 41.666667 %
+epoch 22, minibatch 36/36, validation error 38.333333 %, train error 39.907407 %
+     epoch 22, minibatch 36/36, test error of best model 42.500000 %
+epoch 23, minibatch 36/36, validation error 36.666667 %, train error 39.166667 %
+     epoch 23, minibatch 36/36, test error of best model 42.500000 %
+epoch 24, minibatch 36/36, validation error 37.500000 %, train error 37.777778 %
+epoch 25, minibatch 36/36, validation error 37.500000 %, train error 37.407407 %
+epoch 26, minibatch 36/36, validation error 36.666667 %, train error 36.944444 %
+epoch 27, minibatch 36/36, validation error 36.666667 %, train error 35.833333 %
+epoch 28, minibatch 36/36, validation error 37.500000 %, train error 35.000000 %
+epoch 29, minibatch 36/36, validation error 37.500000 %, train error 34.537037 %
+epoch 30, minibatch 36/36, validation error 36.666667 %, train error 34.722222 %
+epoch 31, minibatch 36/36, validation error 36.666667 %, train error 34.444444 %
+epoch 32, minibatch 36/36, validation error 36.666667 %, train error 34.351852 %
+epoch 33, minibatch 36/36, validation error 36.666667 %, train error 34.074074 %
+epoch 34, minibatch 36/36, validation error 36.666667 %, train error 34.166667 %
+epoch 35, minibatch 36/36, validation error 36.666667 %, train error 34.074074 %
+epoch 36, minibatch 36/36, validation error 36.666667 %, train error 33.888889 %
+epoch 37, minibatch 36/36, validation error 36.666667 %, train error 33.518519 %
+epoch 38, minibatch 36/36, validation error 36.666667 %, train error 33.333333 %
+epoch 39, minibatch 36/36, validation error 37.500000 %, train error 33.425926 %
+epoch 40, minibatch 36/36, validation error 37.500000 %, train error 33.240741 %
+epoch 41, minibatch 36/36, validation error 37.500000 %, train error 33.240741 %
+epoch 42, minibatch 36/36, validation error 37.500000 %, train error 33.240741 %
+epoch 43, minibatch 36/36, validation error 38.333333 %, train error 32.962963 %
+epoch 44, minibatch 36/36, validation error 37.500000 %, train error 33.055556 %
+epoch 45, minibatch 36/36, validation error 37.500000 %, train error 33.148148 %
+epoch 46, minibatch 36/36, validation error 37.500000 %, train error 33.148148 %
+epoch 47, minibatch 36/36, validation error 36.666667 %, train error 33.055556 %
+epoch 48, minibatch 36/36, validation error 36.666667 %, train error 32.777778 %
+epoch 49, minibatch 36/36, validation error 36.666667 %, train error 32.685185 %
+epoch 50, minibatch 36/36, validation error 35.833333 %, train error 32.500000 %
+     epoch 50, minibatch 36/36, test error of best model 40.833333 %
+epoch 51, minibatch 36/36, validation error 35.833333 %, train error 32.592593 %
+epoch 52, minibatch 36/36, validation error 35.833333 %, train error 32.500000 %
+     epoch 52, minibatch 36/36, test error of best model 42.500000 %
+epoch 53, minibatch 36/36, validation error 35.833333 %, train error 32.500000 %
+epoch 54, minibatch 36/36, validation error 35.833333 %, train error 32.407407 %
+epoch 55, minibatch 36/36, validation error 35.833333 %, train error 32.222222 %
+epoch 56, minibatch 36/36, validation error 35.833333 %, train error 32.314815 %
+epoch 57, minibatch 36/36, validation error 35.833333 %, train error 32.407407 %
+epoch 58, minibatch 36/36, validation error 35.833333 %, train error 32.407407 %
+epoch 59, minibatch 36/36, validation error 35.833333 %, train error 32.222222 %
+epoch 60, minibatch 36/36, validation error 35.833333 %, train error 32.129630 %
+epoch 61, minibatch 36/36, validation error 35.833333 %, train error 32.222222 %
+epoch 62, minibatch 36/36, validation error 36.666667 %, train error 32.222222 %
+epoch 63, minibatch 36/36, validation error 36.666667 %, train error 32.129630 %
+epoch 64, minibatch 36/36, validation error 36.666667 %, train error 32.129630 %
+epoch 65, minibatch 36/36, validation error 36.666667 %, train error 32.037037 %
+epoch 66, minibatch 36/36, validation error 36.666667 %, train error 32.037037 %
+epoch 67, minibatch 36/36, validation error 36.666667 %, train error 32.037037 %
+epoch 68, minibatch 36/36, validation error 36.666667 %, train error 31.944444 %
+epoch 69, minibatch 36/36, validation error 36.666667 %, train error 31.944444 %
+epoch 70, minibatch 36/36, validation error 36.666667 %, train error 32.037037 %
+epoch 71, minibatch 36/36, validation error 36.666667 %, train error 31.759259 %
+epoch 72, minibatch 36/36, validation error 36.666667 %, train error 31.759259 %
+epoch 73, minibatch 36/36, validation error 35.833333 %, train error 31.666667 %
+epoch 74, minibatch 36/36, validation error 35.833333 %, train error 31.666667 %
+epoch 75, minibatch 36/36, validation error 35.833333 %, train error 31.666667 %
+epoch 76, minibatch 36/36, validation error 35.833333 %, train error 31.574074 %
+epoch 77, minibatch 36/36, validation error 35.833333 %, train error 31.574074 %
+epoch 78, minibatch 36/36, validation error 35.833333 %, train error 31.574074 %
+epoch 79, minibatch 36/36, validation error 35.833333 %, train error 31.759259 %
+epoch 80, minibatch 36/36, validation error 35.833333 %, train error 31.759259 %
+epoch 81, minibatch 36/36, validation error 35.833333 %, train error 31.851852 %
+epoch 82, minibatch 36/36, validation error 35.833333 %, train error 31.851852 %
+epoch 83, minibatch 36/36, validation error 35.833333 %, train error 31.759259 %
+epoch 84, minibatch 36/36, validation error 35.833333 %, train error 31.759259 %
+epoch 85, minibatch 36/36, validation error 35.833333 %, train error 31.851852 %
+epoch 86, minibatch 36/36, validation error 35.833333 %, train error 31.851852 %
+epoch 87, minibatch 36/36, validation error 35.833333 %, train error 31.666667 %
+epoch 88, minibatch 36/36, validation error 35.833333 %, train error 31.666667 %
+epoch 89, minibatch 36/36, validation error 35.833333 %, train error 31.574074 %
+epoch 90, minibatch 36/36, validation error 35.833333 %, train error 31.574074 %
+epoch 91, minibatch 36/36, validation error 35.000000 %, train error 31.481481 %
+     epoch 91, minibatch 36/36, test error of best model 39.166667 %
+epoch 92, minibatch 36/36, validation error 35.000000 %, train error 31.481481 %
+epoch 93, minibatch 36/36, validation error 35.000000 %, train error 31.481481 %
+epoch 94, minibatch 36/36, validation error 35.000000 %, train error 31.481481 %
+epoch 95, minibatch 36/36, validation error 35.000000 %, train error 31.481481 %
+epoch 96, minibatch 36/36, validation error 35.000000 %, train error 31.296296 %
+epoch 97, minibatch 36/36, validation error 35.000000 %, train error 31.296296 %
+epoch 98, minibatch 36/36, validation error 35.000000 %, train error 31.481481 %
+epoch 99, minibatch 36/36, validation error 35.000000 %, train error 31.481481 %
+epoch 100, minibatch 36/36, validation error 35.000000 %, train error 31.388889 %
+epoch 101, minibatch 36/36, validation error 35.000000 %, train error 31.388889 %
+epoch 102, minibatch 36/36, validation error 35.000000 %, train error 31.388889 %
+epoch 103, minibatch 36/36, validation error 35.000000 %, train error 31.296296 %
+epoch 104, minibatch 36/36, validation error 35.000000 %, train error 31.296296 %
+epoch 105, minibatch 36/36, validation error 35.000000 %, train error 31.296296 %
+epoch 106, minibatch 36/36, validation error 35.000000 %, train error 31.296296 %
+epoch 107, minibatch 36/36, validation error 35.000000 %, train error 31.296296 %
+epoch 108, minibatch 36/36, validation error 35.833333 %, train error 31.203704 %
+epoch 109, minibatch 36/36, validation error 35.833333 %, train error 31.203704 %
+epoch 110, minibatch 36/36, validation error 35.833333 %, train error 31.203704 %
+epoch 111, minibatch 36/36, validation error 35.833333 %, train error 31.203704 %
+epoch 112, minibatch 36/36, validation error 35.833333 %, train error 31.203704 %
+epoch 113, minibatch 36/36, validation error 35.833333 %, train error 31.203704 %
+epoch 114, minibatch 36/36, validation error 35.833333 %, train error 31.203704 %
+epoch 115, minibatch 36/36, validation error 35.833333 %, train error 31.203704 %
+epoch 116, minibatch 36/36, validation error 35.833333 %, train error 31.018519 %
+epoch 117, minibatch 36/36, validation error 35.833333 %, train error 30.925926 %
+epoch 118, minibatch 36/36, validation error 35.833333 %, train error 30.740741 %
+epoch 119, minibatch 36/36, validation error 35.833333 %, train error 30.740741 %
+epoch 120, minibatch 36/36, validation error 35.833333 %, train error 30.740741 %
+epoch 121, minibatch 36/36, validation error 35.833333 %, train error 30.740741 %
+epoch 122, minibatch 36/36, validation error 35.833333 %, train error 30.740741 %
+epoch 123, minibatch 36/36, validation error 35.833333 %, train error 30.740741 %
+epoch 124, minibatch 36/36, validation error 35.833333 %, train error 30.740741 %
+epoch 125, minibatch 36/36, validation error 35.833333 %, train error 30.740741 %
+epoch 126, minibatch 36/36, validation error 35.000000 %, train error 30.740741 %
+epoch 127, minibatch 36/36, validation error 35.000000 %, train error 30.740741 %
+epoch 128, minibatch 36/36, validation error 35.000000 %, train error 30.740741 %
+epoch 129, minibatch 36/36, validation error 35.000000 %, train error 30.740741 %
+epoch 130, minibatch 36/36, validation error 35.000000 %, train error 30.648148 %
+epoch 131, minibatch 36/36, validation error 35.000000 %, train error 30.648148 %
+epoch 132, minibatch 36/36, validation error 35.000000 %, train error 30.648148 %
+epoch 133, minibatch 36/36, validation error 35.000000 %, train error 30.648148 %
+epoch 134, minibatch 36/36, validation error 35.000000 %, train error 30.740741 %
+epoch 135, minibatch 36/36, validation error 35.000000 %, train error 30.740741 %
+epoch 136, minibatch 36/36, validation error 35.000000 %, train error 30.648148 %
+epoch 137, minibatch 36/36, validation error 35.000000 %, train error 30.555556 %
+epoch 138, minibatch 36/36, validation error 34.166667 %, train error 30.555556 %
+     epoch 138, minibatch 36/36, test error of best model 39.166667 %
+epoch 139, minibatch 36/36, validation error 34.166667 %, train error 30.555556 %
+epoch 140, minibatch 36/36, validation error 34.166667 %, train error 30.462963 %
+epoch 141, minibatch 36/36, validation error 34.166667 %, train error 30.462963 %
+epoch 142, minibatch 36/36, validation error 34.166667 %, train error 30.462963 %
+epoch 143, minibatch 36/36, validation error 34.166667 %, train error 30.462963 %
+epoch 144, minibatch 36/36, validation error 34.166667 %, train error 30.370370 %
+epoch 145, minibatch 36/36, validation error 34.166667 %, train error 30.370370 %
+epoch 146, minibatch 36/36, validation error 34.166667 %, train error 30.370370 %
+epoch 147, minibatch 36/36, validation error 34.166667 %, train error 30.370370 %
+epoch 148, minibatch 36/36, validation error 34.166667 %, train error 30.370370 %
+epoch 149, minibatch 36/36, validation error 34.166667 %, train error 30.370370 %
+epoch 150, minibatch 36/36, validation error 34.166667 %, train error 30.370370 %
+epoch 151, minibatch 36/36, validation error 34.166667 %, train error 30.370370 %
+epoch 152, minibatch 36/36, validation error 34.166667 %, train error 30.370370 %
+epoch 153, minibatch 36/36, validation error 34.166667 %, train error 30.370370 %
+epoch 154, minibatch 36/36, validation error 34.166667 %, train error 30.277778 %
+epoch 155, minibatch 36/36, validation error 34.166667 %, train error 30.277778 %
+epoch 156, minibatch 36/36, validation error 34.166667 %, train error 30.277778 %
+epoch 157, minibatch 36/36, validation error 34.166667 %, train error 30.277778 %
+epoch 158, minibatch 36/36, validation error 34.166667 %, train error 30.277778 %
+epoch 159, minibatch 36/36, validation error 34.166667 %, train error 30.277778 %
+epoch 160, minibatch 36/36, validation error 33.333333 %, train error 30.277778 %
+     epoch 160, minibatch 36/36, test error of best model 38.333333 %
+epoch 161, minibatch 36/36, validation error 33.333333 %, train error 30.277778 %
+epoch 162, minibatch 36/36, validation error 33.333333 %, train error 30.277778 %
+epoch 163, minibatch 36/36, validation error 33.333333 %, train error 30.277778 %
+epoch 164, minibatch 36/36, validation error 33.333333 %, train error 30.277778 %
+epoch 165, minibatch 36/36, validation error 32.500000 %, train error 30.277778 %
+     epoch 165, minibatch 36/36, test error of best model 38.333333 %
+epoch 166, minibatch 36/36, validation error 32.500000 %, train error 30.185185 %
+epoch 167, minibatch 36/36, validation error 32.500000 %, train error 30.185185 %
+epoch 168, minibatch 36/36, validation error 32.500000 %, train error 30.185185 %
+epoch 169, minibatch 36/36, validation error 32.500000 %, train error 30.185185 %
+epoch 170, minibatch 36/36, validation error 32.500000 %, train error 30.185185 %
+epoch 171, minibatch 36/36, validation error 32.500000 %, train error 30.185185 %
+epoch 172, minibatch 36/36, validation error 32.500000 %, train error 30.185185 %
+epoch 173, minibatch 36/36, validation error 32.500000 %, train error 30.185185 %
+epoch 174, minibatch 36/36, validation error 32.500000 %, train error 30.185185 %
+epoch 175, minibatch 36/36, validation error 32.500000 %, train error 30.092593 %
+epoch 176, minibatch 36/36, validation error 32.500000 %, train error 30.092593 %
+epoch 177, minibatch 36/36, validation error 32.500000 %, train error 30.092593 %
+epoch 178, minibatch 36/36, validation error 32.500000 %, train error 30.092593 %
+epoch 179, minibatch 36/36, validation error 32.500000 %, train error 30.092593 %
+epoch 180, minibatch 36/36, validation error 32.500000 %, train error 30.092593 %
+epoch 181, minibatch 36/36, validation error 32.500000 %, train error 30.000000 %
+epoch 182, minibatch 36/36, validation error 32.500000 %, train error 30.000000 %
+epoch 183, minibatch 36/36, validation error 32.500000 %, train error 29.907407 %
+epoch 184, minibatch 36/36, validation error 32.500000 %, train error 29.907407 %
+epoch 185, minibatch 36/36, validation error 32.500000 %, train error 29.907407 %
+epoch 186, minibatch 36/36, validation error 32.500000 %, train error 29.814815 %
+epoch 187, minibatch 36/36, validation error 32.500000 %, train error 29.814815 %
+epoch 188, minibatch 36/36, validation error 32.500000 %, train error 29.814815 %
+epoch 189, minibatch 36/36, validation error 32.500000 %, train error 29.814815 %
+epoch 190, minibatch 36/36, validation error 32.500000 %, train error 29.814815 %
+epoch 191, minibatch 36/36, validation error 32.500000 %, train error 29.814815 %
+epoch 192, minibatch 36/36, validation error 32.500000 %, train error 29.814815 %
+epoch 193, minibatch 36/36, validation error 32.500000 %, train error 29.814815 %
+epoch 194, minibatch 36/36, validation error 32.500000 %, train error 29.814815 %
+epoch 195, minibatch 36/36, validation error 32.500000 %, train error 29.814815 %
+epoch 196, minibatch 36/36, validation error 32.500000 %, train error 29.722222 %
+epoch 197, minibatch 36/36, validation error 32.500000 %, train error 29.722222 %
+epoch 198, minibatch 36/36, validation error 32.500000 %, train error 29.722222 %
+epoch 199, minibatch 36/36, validation error 32.500000 %, train error 29.722222 %
+epoch 200, minibatch 36/36, validation error 32.500000 %, train error 29.722222 %
+epoch 201, minibatch 36/36, validation error 32.500000 %, train error 29.722222 %
+epoch 202, minibatch 36/36, validation error 32.500000 %, train error 29.722222 %
+epoch 203, minibatch 36/36, validation error 32.500000 %, train error 29.722222 %
+epoch 204, minibatch 36/36, validation error 32.500000 %, train error 29.722222 %
+epoch 205, minibatch 36/36, validation error 32.500000 %, train error 29.722222 %
+epoch 206, minibatch 36/36, validation error 32.500000 %, train error 29.722222 %
+epoch 207, minibatch 36/36, validation error 33.333333 %, train error 29.629630 %
+epoch 208, minibatch 36/36, validation error 33.333333 %, train error 29.629630 %
+epoch 209, minibatch 36/36, validation error 33.333333 %, train error 29.629630 %
+epoch 210, minibatch 36/36, validation error 33.333333 %, train error 29.629630 %
+epoch 211, minibatch 36/36, validation error 33.333333 %, train error 29.629630 %
+epoch 212, minibatch 36/36, validation error 33.333333 %, train error 29.629630 %
+epoch 213, minibatch 36/36, validation error 33.333333 %, train error 29.629630 %
+epoch 214, minibatch 36/36, validation error 33.333333 %, train error 29.629630 %
+epoch 215, minibatch 36/36, validation error 33.333333 %, train error 29.629630 %
+epoch 216, minibatch 36/36, validation error 33.333333 %, train error 29.629630 %
+epoch 217, minibatch 36/36, validation error 33.333333 %, train error 29.629630 %
+epoch 218, minibatch 36/36, validation error 33.333333 %, train error 29.629630 %
+epoch 219, minibatch 36/36, validation error 33.333333 %, train error 29.629630 %
+epoch 220, minibatch 36/36, validation error 33.333333 %, train error 29.629630 %
+epoch 221, minibatch 36/36, validation error 33.333333 %, train error 29.629630 %
+epoch 222, minibatch 36/36, validation error 33.333333 %, train error 29.629630 %
+epoch 223, minibatch 36/36, validation error 32.500000 %, train error 29.629630 %
+epoch 224, minibatch 36/36, validation error 32.500000 %, train error 29.722222 %
+epoch 225, minibatch 36/36, validation error 32.500000 %, train error 29.722222 %
+epoch 226, minibatch 36/36, validation error 32.500000 %, train error 29.722222 %
+epoch 227, minibatch 36/36, validation error 32.500000 %, train error 29.722222 %
+epoch 228, minibatch 36/36, validation error 32.500000 %, train error 29.722222 %
+epoch 229, minibatch 36/36, validation error 32.500000 %, train error 29.722222 %
+epoch 230, minibatch 36/36, validation error 32.500000 %, train error 29.722222 %
+epoch 231, minibatch 36/36, validation error 32.500000 %, train error 29.722222 %
+epoch 232, minibatch 36/36, validation error 32.500000 %, train error 29.722222 %
+epoch 233, minibatch 36/36, validation error 32.500000 %, train error 29.722222 %
+epoch 234, minibatch 36/36, validation error 32.500000 %, train error 29.722222 %
+epoch 235, minibatch 36/36, validation error 32.500000 %, train error 29.722222 %
+epoch 236, minibatch 36/36, validation error 32.500000 %, train error 29.722222 %
+epoch 237, minibatch 36/36, validation error 32.500000 %, train error 29.722222 %
+epoch 238, minibatch 36/36, validation error 32.500000 %, train error 29.722222 %
+epoch 239, minibatch 36/36, validation error 32.500000 %, train error 29.722222 %
+epoch 240, minibatch 36/36, validation error 32.500000 %, train error 29.722222 %
+epoch 241, minibatch 36/36, validation error 32.500000 %, train error 29.629630 %
+epoch 242, minibatch 36/36, validation error 32.500000 %, train error 29.629630 %
+epoch 243, minibatch 36/36, validation error 32.500000 %, train error 29.629630 %
+epoch 244, minibatch 36/36, validation error 32.500000 %, train error 29.629630 %
+epoch 245, minibatch 36/36, validation error 32.500000 %, train error 29.629630 %
+epoch 246, minibatch 36/36, validation error 32.500000 %, train error 29.629630 %
+epoch 247, minibatch 36/36, validation error 32.500000 %, train error 29.629630 %
+epoch 248, minibatch 36/36, validation error 32.500000 %, train error 29.629630 %
+epoch 249, minibatch 36/36, validation error 32.500000 %, train error 29.629630 %
+epoch 250, minibatch 36/36, validation error 32.500000 %, train error 29.629630 %
+epoch 251, minibatch 36/36, validation error 32.500000 %, train error 29.629630 %
+epoch 252, minibatch 36/36, validation error 32.500000 %, train error 29.629630 %
+epoch 253, minibatch 36/36, validation error 32.500000 %, train error 29.629630 %
+epoch 254, minibatch 36/36, validation error 32.500000 %, train error 29.537037 %
+epoch 255, minibatch 36/36, validation error 32.500000 %, train error 29.537037 %
+epoch 256, minibatch 36/36, validation error 32.500000 %, train error 29.537037 %
+epoch 257, minibatch 36/36, validation error 32.500000 %, train error 29.629630 %
+epoch 258, minibatch 36/36, validation error 32.500000 %, train error 29.629630 %
+epoch 259, minibatch 36/36, validation error 32.500000 %, train error 29.629630 %
+epoch 260, minibatch 36/36, validation error 32.500000 %, train error 29.629630 %
+epoch 261, minibatch 36/36, validation error 32.500000 %, train error 29.629630 %
+epoch 262, minibatch 36/36, validation error 32.500000 %, train error 29.629630 %
+epoch 263, minibatch 36/36, validation error 32.500000 %, train error 29.629630 %
+epoch 264, minibatch 36/36, validation error 32.500000 %, train error 29.629630 %
+epoch 265, minibatch 36/36, validation error 32.500000 %, train error 29.629630 %
+epoch 266, minibatch 36/36, validation error 32.500000 %, train error 29.629630 %
+epoch 267, minibatch 36/36, validation error 32.500000 %, train error 29.629630 %
+epoch 268, minibatch 36/36, validation error 32.500000 %, train error 29.629630 %
+epoch 269, minibatch 36/36, validation error 32.500000 %, train error 29.629630 %
+epoch 270, minibatch 36/36, validation error 32.500000 %, train error 29.629630 %
+epoch 271, minibatch 36/36, validation error 32.500000 %, train error 29.629630 %
+epoch 272, minibatch 36/36, validation error 32.500000 %, train error 29.629630 %
+epoch 273, minibatch 36/36, validation error 32.500000 %, train error 29.629630 %
+epoch 274, minibatch 36/36, validation error 32.500000 %, train error 29.629630 %
+epoch 275, minibatch 36/36, validation error 32.500000 %, train error 29.629630 %
+epoch 276, minibatch 36/36, validation error 32.500000 %, train error 29.629630 %
+epoch 277, minibatch 36/36, validation error 32.500000 %, train error 29.629630 %
+epoch 278, minibatch 36/36, validation error 32.500000 %, train error 29.629630 %
+epoch 279, minibatch 36/36, validation error 32.500000 %, train error 29.629630 %
+epoch 280, minibatch 36/36, validation error 32.500000 %, train error 29.629630 %
+epoch 281, minibatch 36/36, validation error 32.500000 %, train error 29.537037 %
+epoch 282, minibatch 36/36, validation error 32.500000 %, train error 29.537037 %
+epoch 283, minibatch 36/36, validation error 32.500000 %, train error 29.537037 %
+epoch 284, minibatch 36/36, validation error 32.500000 %, train error 29.537037 %
+epoch 285, minibatch 36/36, validation error 32.500000 %, train error 29.537037 %
+epoch 286, minibatch 36/36, validation error 32.500000 %, train error 29.537037 %
+epoch 287, minibatch 36/36, validation error 32.500000 %, train error 29.537037 %
+epoch 288, minibatch 36/36, validation error 32.500000 %, train error 29.537037 %
+epoch 289, minibatch 36/36, validation error 32.500000 %, train error 29.444444 %
+epoch 290, minibatch 36/36, validation error 32.500000 %, train error 29.444444 %
+epoch 291, minibatch 36/36, validation error 32.500000 %, train error 29.444444 %
+epoch 292, minibatch 36/36, validation error 32.500000 %, train error 29.351852 %
+epoch 293, minibatch 36/36, validation error 32.500000 %, train error 29.351852 %
+epoch 294, minibatch 36/36, validation error 32.500000 %, train error 29.259259 %
+epoch 295, minibatch 36/36, validation error 32.500000 %, train error 29.259259 %
+epoch 296, minibatch 36/36, validation error 32.500000 %, train error 29.259259 %
+epoch 297, minibatch 36/36, validation error 32.500000 %, train error 29.259259 %
+epoch 298, minibatch 36/36, validation error 32.500000 %, train error 29.351852 %
+epoch 299, minibatch 36/36, validation error 32.500000 %, train error 29.351852 %
+epoch 300, minibatch 36/36, validation error 32.500000 %, train error 29.351852 %
+epoch 301, minibatch 36/36, validation error 32.500000 %, train error 29.351852 %
+epoch 302, minibatch 36/36, validation error 32.500000 %, train error 29.351852 %
+epoch 303, minibatch 36/36, validation error 32.500000 %, train error 29.351852 %
+epoch 304, minibatch 36/36, validation error 32.500000 %, train error 29.351852 %
+epoch 305, minibatch 36/36, validation error 32.500000 %, train error 29.351852 %
+epoch 306, minibatch 36/36, validation error 32.500000 %, train error 29.259259 %
+epoch 307, minibatch 36/36, validation error 32.500000 %, train error 29.259259 %
+epoch 308, minibatch 36/36, validation error 32.500000 %, train error 29.259259 %
+epoch 309, minibatch 36/36, validation error 32.500000 %, train error 29.259259 %
+epoch 310, minibatch 36/36, validation error 32.500000 %, train error 29.259259 %
+epoch 311, minibatch 36/36, validation error 32.500000 %, train error 29.259259 %
+epoch 312, minibatch 36/36, validation error 32.500000 %, train error 29.259259 %
+epoch 313, minibatch 36/36, validation error 32.500000 %, train error 29.166667 %
+epoch 314, minibatch 36/36, validation error 32.500000 %, train error 29.166667 %
+epoch 315, minibatch 36/36, validation error 32.500000 %, train error 29.166667 %
+epoch 316, minibatch 36/36, validation error 32.500000 %, train error 29.166667 %
+epoch 317, minibatch 36/36, validation error 32.500000 %, train error 29.166667 %
+epoch 318, minibatch 36/36, validation error 32.500000 %, train error 29.166667 %
+epoch 319, minibatch 36/36, validation error 32.500000 %, train error 29.166667 %
+epoch 320, minibatch 36/36, validation error 32.500000 %, train error 29.166667 %
+epoch 321, minibatch 36/36, validation error 32.500000 %, train error 29.166667 %
+epoch 322, minibatch 36/36, validation error 32.500000 %, train error 29.166667 %
+epoch 323, minibatch 36/36, validation error 32.500000 %, train error 29.166667 %
+epoch 324, minibatch 36/36, validation error 32.500000 %, train error 29.166667 %
+epoch 325, minibatch 36/36, validation error 32.500000 %, train error 29.166667 %
+epoch 326, minibatch 36/36, validation error 32.500000 %, train error 29.166667 %
+epoch 327, minibatch 36/36, validation error 32.500000 %, train error 29.166667 %
+epoch 328, minibatch 36/36, validation error 32.500000 %, train error 29.166667 %
+epoch 329, minibatch 36/36, validation error 32.500000 %, train error 29.166667 %
+The code for file logistic_sgd.py ran for 8.5s
+11878 11878
+Optimization complete with:
+best train score of 29.166667 %, best validation score of 32.500000 %, with test performance 38.333333 %
+The code run for 330 epochs, with 39.031083 epochs/sec
+
+
