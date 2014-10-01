@@ -135,7 +135,7 @@ class LogisticRegression(object):
 
 
 def cg_optimization_mnist(
-        n_epochs=5000,
+        n_epochs=50,
         mnist_pkl_gz='mnist.pkl.gz'):
     """Demonstrate conjugate gradient optimization of a log-linear model
 
@@ -166,7 +166,7 @@ def cg_optimization_mnist(
     n_test_batches = test_set_x.get_value(borrow=True).shape[0] / batch_size
 
     #ishape = (28, 28)  # this is the size of MNIST images
-    n_in = 1858  # number of input units
+    n_in = 300*250  # number of input units
     n_out = 5  # number of output units
 
     ######################
@@ -206,8 +206,11 @@ def cg_optimization_mnist(
     mytrain_model = theano.function(inputs=[minibatch_offset],
             outputs=classifier.errors(y),
             givens={
-                x: train_set_x[minibatch_offset * batch_size:(minibatch_offset + 1) * batch_size],
-                y: train_set_y[minibatch_offset * batch_size:(minibatch_offset + 1) * batch_size]})
+                x: train_set_x[minibatch_offset:
+                               minibatch_offset + batch_size],
+                y: train_set_y[minibatch_offset:
+                               minibatch_offset + batch_size]},
+            name="train")
 
     #  compile a thenao function that returns the cost of a minibatch
     batch_cost = theano.function([minibatch_offset], cost,

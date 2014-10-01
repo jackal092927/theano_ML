@@ -82,6 +82,7 @@ output = 2 classes
 supre-params:
 learning_rate = 0.03
 
+/System/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7 /Users/Jackal/Work/theano/logistic_sgd.py
 ... loading data
 ... building the model
 ... training the model

@@ -157,9 +157,10 @@ def load_data(dataset):
 
     # Download the MNIST dataset if it is not present
     #dataset = './data/mnist.pkl.gz'
-    #dataset = './data/mnist_less.pkl'
+    dataset = './data/mnist_less.pkl'
+    #dataset = './data/mydata0.pkl'
     #dataset = './data/mydata_small.pkl'
-    dataset = './data/feature.pkl'
+    #dataset = './data/feature.pkl'
     #dataset = './data/feature2.pkl'
     # #data_dir, data_file = os.path.split(dataset)
     # data_dir, data_file = data_path.split(dataset)
@@ -227,9 +228,9 @@ def load_data(dataset):
 
 def sgd_optimization_mnist(
         #learning_rate=0.13,
-        learning_rate=0.13,
-        n_epochs=1000,
-        dataset='mnist.pkl.',
+        learning_rate=0.33,
+        n_epochs=2000,
+        dataset='mnist_less.pkl.',
         #batch_size=600):
         batch_size=30):
     """
@@ -251,10 +252,13 @@ def sgd_optimization_mnist(
 
     """
     datasets = load_data(dataset)
-    n_in = 1858
-    n_out = 5
-    #n_in = 784
-    #n_out = 10
+    #n_in = 1858
+    #n_out = 5
+    n_in = 784
+    n_out = 10
+
+    params = (dataset, n_in, n_out, learning_rate, n_epochs)
+    print (("dataset: %s, n_in: %d, n_out: %d, learning_rate: %i, n_epochs: %i") % params)
 
     train_set_x, train_set_y = datasets[0]
     valid_set_x, valid_set_y = datasets[1]
