@@ -2,7 +2,7 @@ __author__ = 'Jackal'
 
 import scipy.io
 import gzip
-from os import listdir
+from os import listdir, path
 from scipy import misc
 import numpy as np
 import matplotlib.pyplot as plt
@@ -10,16 +10,16 @@ import cPickle
 
 import numpy as np
 
-dirpath = '../data/850invariPLBP+1008PLAB-79.93/ftr/'
-filename_list = ['negativeFeatures', 'CIN1Features', 'CIN2Features', 'CIN3Features', 'cancerFeatures']
-targetfile = '../data/feature.pkl'
-# dirpath = './data/850invariPLBP+1008PLAB-79.93/'
-# filename_list = ['Neg', 'Pos']
-# targetfile = './data/feature2.pkl'
+# dirpath = '../data/850invariPLBP+1008PLAB-79.93/ftr/'
+# filename_list = ['negativeFeatures', 'CIN1Features', 'CIN2Features', 'CIN3Features', 'cancerFeatures']
+# targetfile = '../data/feature.pkl'
+dirpath = '../data/850invariPLBP-78.84/'
+filename_list = ['Neg', 'Pos']
+targetfile = '../data/feature850-2.pkl'
 
 filetype = '.mat'
 filelist = [dirpath + filename + filetype for filename in filename_list]
-mat_list = [scipy.io.loadmat(file) for file in filelist]
+mat_list = [scipy.io.loadmat(file) for file in filelist if path.isfile(file)]
 data_list = [mat[file] for mat, file in zip(mat_list, filename_list)]
 
 
@@ -31,7 +31,7 @@ trandat_list = []
 trantag_list = []
 
 for i, data in enumerate(data_list):
-    size = data.shape[0] / 10
+    size = data.shape[0] / 100 *10
     valitag_list += [i]*size
     testtag_list += [i]*size
     trantag_list += [i]*(data.shape[0] - (2*size))

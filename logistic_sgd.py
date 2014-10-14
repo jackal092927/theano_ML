@@ -157,7 +157,7 @@ def load_data(dataset):
 
     # Download the MNIST dataset if it is not present
     #dataset = './data/mnist.pkl.gz'
-    dataset = './data/mnist_less.pkl'
+    #dataset = './data/mnist_less.pkl'
     #dataset = './data/mydata0.pkl'
     #dataset = './data/mydata_small.pkl'
     #dataset = './data/feature.pkl'

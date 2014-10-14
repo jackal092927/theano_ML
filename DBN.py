@@ -13,8 +13,15 @@ import theano.tensor as T
 from theano.tensor.shared_randomstreams import RandomStreams
 
 from logistic_sgd import LogisticRegression, load_data
+from logistic_cg import LogisticRegression as log_cg
 from mlp import HiddenLayer
 from rbm import RBM
+
+
+n_in = 850
+n_out = 2
+hidden_layers_sizes=[2070,850]
+dataset='./data/feature850-2.pkl'
 
 
 class DBN(object):
@@ -122,7 +129,7 @@ class DBN(object):
             self.rbm_layers.append(rbm_layer)
 
         # We now need to add a logistic layer on top of the MLP
-        self.logLayer = LogisticRegression(
+        self.logLayer = log_cg(
             input=self.sigmoid_layers[-1].output,
             n_in=hidden_layers_sizes[-1],
             n_out=n_outs)
@@ -292,9 +299,14 @@ def test_DBN(finetune_lr=0.1, pretraining_epochs=100,
     numpy_rng = numpy.random.RandomState(123)
     print '... building the model'
     # construct the Deep Belief Network
-    dbn = DBN(numpy_rng=numpy_rng, n_ins=28 * 28,
-              hidden_layers_sizes=[1000, 1000, 1000],
-              n_outs=10)
+    dbn = DBN(numpy_rng=numpy_rng,
+              #n_ins=28 * 28,
+              n_ins=n_in,
+              #hidden_layers_sizes=[1000, 1000, 1000],
+              hidden_layers_sizes=hidden_layers_sizes,
+              #n_outs=10
+              n_outs=n_out
+    )
 
     #########################
     # PRETRAINING THE MODEL #
@@ -404,4 +416,4 @@ def test_DBN(finetune_lr=0.1, pretraining_epochs=100,
 
 
 if __name__ == '__main__':
-    test_DBN()
+    test_DBN(dataset=dataset)

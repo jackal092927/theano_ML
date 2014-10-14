@@ -17,7 +17,7 @@ import os
 
 from theano.tensor.shared_randomstreams import RandomStreams
 
-from utils import tile_raster_images
+#from utils import tile_raster_images
 from logistic_sgd import load_data
 
 
@@ -396,10 +396,10 @@ def test_rbm(learning_rate=0.1, training_epochs=15,
         # Plot filters after each training epoch
         plotting_start = time.clock()
         # Construct image from the weight matrix
-        image = PIL.Image.fromarray(tile_raster_images(
-                 X=rbm.W.get_value(borrow=True).T,
-                 img_shape=(28, 28), tile_shape=(10, 10),
-                 tile_spacing=(1, 1)))
+        # image = PIL.Image.fromarray(tile_raster_images(
+        #          X=rbm.W.get_value(borrow=True).T,
+        #          img_shape=(28, 28), tile_shape=(10, 10),
+        #          tile_spacing=(1, 1)))
         image.save('filters_at_epoch_%i.png' % epoch)
         plotting_stop = time.clock()
         plotting_time += (plotting_stop - plotting_start)
